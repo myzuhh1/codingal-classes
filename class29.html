@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>convert</h2>
+
+        <p id="result"></p>
+
+        <script>
+            var object = { name: "riya", age: 12, grade: 7 };
+
+            var myjson = JSON.stringify(object);
+
+            var object2 = JSON.parse(myjson);
+
+            document.getElementById("result").innerHTML = object2.name;
+        </script>
+    </body>
+</html>
